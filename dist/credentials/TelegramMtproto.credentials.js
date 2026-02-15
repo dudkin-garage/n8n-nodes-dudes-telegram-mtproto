@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TelegramMtprotoCredentials = void 0;
-class TelegramMtprotoCredentials {
+exports.TelegramMtproto = void 0;
+class TelegramMtproto {
     constructor() {
         this.name = 'telegramMtproto';
         this.displayName = 'Telegram MTProto';
@@ -47,4 +47,4 @@ class TelegramMtprotoCredentials {
         ];
     }
 }
-exports.TelegramMtprotoCredentials = TelegramMtprotoCredentials;
+exports.TelegramMtproto = TelegramMtproto;

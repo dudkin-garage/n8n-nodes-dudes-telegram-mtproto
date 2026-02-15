@@ -1,5 +1,5 @@
-import { TelegramMtproto } from './nodes/TelegramMtproto.node';
-import { TelegramMtprotoCredentials } from './credentials/TelegramMtproto.credentials';
+import { TelegramMtproto as TelegramMtprotoNode } from './nodes/TelegramMtproto.node';
+import { TelegramMtproto as TelegramMtprotoCredentials } from './credentials/TelegramMtproto.credentials';
 
-export const nodes = [TelegramMtproto];
+export const nodes = [TelegramMtprotoNode];
 export const credentials = [TelegramMtprotoCredentials];

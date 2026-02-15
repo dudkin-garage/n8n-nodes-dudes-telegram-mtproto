@@ -1,6 +1,6 @@
 import { ICredentialType, INodeProperties } from 'n8n-workflow';
 
-export class TelegramMtprotoCredentials implements ICredentialType {
+export class TelegramMtproto implements ICredentialType {
   name = 'telegramMtproto';
   displayName = 'Telegram MTProto';
 
