@@ -12,6 +12,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json && node scripts/copy-assets.js",
     "dev": "tsc -p tsconfig.json --watch",
+    "test": "node scripts/verify-exports.js",
     "session:mtproto": "node scripts/mtproto-session.js"
   },
   "dependencies": {
