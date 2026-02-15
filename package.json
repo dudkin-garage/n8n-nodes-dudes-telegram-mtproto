@@ -1,0 +1,35 @@
+{
+  "name": "n8n-nodes-dudes-telegram-mtproto",
+  "version": "0.1.0",
+  "description": "n8n community node for Telegram MTProto chat history retrieval (user account)",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/copy-assets.js",
+    "dev": "tsc -p tsconfig.json --watch",
+    "session:mtproto": "node scripts/mtproto-session.js"
+  },
+  "dependencies": {
+    "input": "^1.0.1",
+    "telegram": "^2.20.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "n8n-core": "^2.6.4",
+    "n8n-workflow": "^2.6.4",
+    "typescript": "^5.4.5"
+  },
+  "n8n": {
+    "credentials": [
+      "dist/credentials/TelegramMtproto.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/TelegramMtproto.node.js"
+    ]
+  }
+}

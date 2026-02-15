@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.env.*
+credentials.json
+*.log
+*.tgz
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
